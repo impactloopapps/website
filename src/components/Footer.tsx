@@ -82,7 +82,14 @@ export default function Footer() {
               data-cursor
               className="text-white/60 transition-colors hover:text-white"
             >
-              Terms &amp; Conditions
+              Terms
+            </a>
+            <a
+              href={`${import.meta.env.BASE_URL}privacy.html`}
+              data-cursor
+              className="text-white/60 transition-colors hover:text-white"
+            >
+              Privacy
             </a>
             <a
               href="#top"
