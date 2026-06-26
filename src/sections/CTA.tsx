@@ -11,7 +11,7 @@ export default function CTA() {
               aria-hidden
               className="absolute inset-0 -z-10 bg-[conic-gradient(from_180deg_at_50%_50%,#7c5cff33,#22d3ee33,#e879f933,#7c5cff33)]"
             />
-            <div aria-hidden className="absolute inset-0 -z-10 backdrop-blur-2xl" />
+            <div aria-hidden className="absolute inset-0 -z-10 bg-ink/40 backdrop-blur-md" />
 
             <h2 className="mx-auto max-w-3xl font-display text-[clamp(2rem,6vw,4rem)] font-semibold">
               Start your loop today.

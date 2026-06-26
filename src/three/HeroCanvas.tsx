@@ -32,18 +32,18 @@ export default function HeroCanvas({ active, lowPower }: Props) {
   return (
     <Canvas
       frameloop={active ? 'always' : 'never'}
-      dpr={lowPower ? [1, 1.5] : [1, 2]}
-      gl={{ antialias: true, alpha: true, powerPreference: 'high-performance' }}
+      dpr={lowPower ? [1, 1.35] : [1, 1.6]}
+      gl={{ antialias: false, alpha: true, powerPreference: 'high-performance' }}
       camera={{ position: [0, 0, 4.2], fov: 42 }}
     >
       <LoopMesh amplitude={lowPower ? 0.22 : 0.3} />
       {!lowPower && (
         <group position={[0, 0, -2.5]}>
-          <Particles count={9000} size={16} />
+          <Particles count={4000} size={16} />
         </group>
       )}
 
-      <EffectComposer multisampling={lowPower ? 0 : 4}>{effects}</EffectComposer>
+      <EffectComposer multisampling={0}>{effects}</EffectComposer>
     </Canvas>
   )
 }
