@@ -76,14 +76,23 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-sm text-white/40 sm:flex-row">
           <p>© {new Date().getFullYear()} Impact Loop. Crafted with intent.</p>
-          <a
-            href="#top"
-            onClick={top}
-            data-cursor
-            className="inline-flex items-center gap-2 text-white/60 transition-colors hover:text-white"
-          >
-            Back to top ↑
-          </a>
+          <div className="flex items-center gap-6">
+            <a
+              href={`${import.meta.env.BASE_URL}terms.html`}
+              data-cursor
+              className="text-white/60 transition-colors hover:text-white"
+            >
+              Terms &amp; Conditions
+            </a>
+            <a
+              href="#top"
+              onClick={top}
+              data-cursor
+              className="inline-flex items-center gap-2 text-white/60 transition-colors hover:text-white"
+            >
+              Back to top ↑
+            </a>
+          </div>
         </div>
       </div>
     </footer>
